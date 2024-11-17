@@ -1,0 +1,42 @@
+#root {
+  background: #131313;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  .button-container {
+    display: grid;
+    height: fit-content;
+    gap: 10px;
+    align-items: baseline;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .empty {
+    padding: 20px;
+    margin: 0;
+    background: #000;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(150deg, #5ad5c5, #83de7b, #ee8329);
+    height: fit-content;
+    font-size: 20px;
+    position: sticky;
+    top: 20px;
+  }
+
+  .active span {
+    background: none;
+  }
+}
